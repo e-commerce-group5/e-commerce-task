@@ -1,7 +1,5 @@
 # JS3 Group Assignment - E-Commerce Shop
 
-[Demo-live-version](https://mrmisc-live.herokuapp.com/products)
-
 #### Name: *Mr. Misc*
 
 ## Tools and etc
