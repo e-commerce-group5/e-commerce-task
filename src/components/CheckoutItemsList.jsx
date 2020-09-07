@@ -7,7 +7,7 @@ import BtnClearCart from "./BtnClearCart";
 import { Link } from "react-router-dom";
 
 export default function CheckoutItemsList({ discountPrice, discountRate }) {
-  const ProductsData = useContext(ProductsContext); 
+  const ProductsData = useContext(ProductsContext);
   const { cart: cartItems } = ProductsData;
 
   function renderTableRows() {
@@ -66,7 +66,9 @@ export default function CheckoutItemsList({ discountPrice, discountRate }) {
                 <small>
                   <span className="discount-price mr-5">
                     Original Price:
-                    <del className="font-italic ml-1">{discountPrice} SEK</del>
+                    <del className="font-italic ml-1">
+                      {cartTotalPrice(cartItems)} SEK
+                    </del>
                     <span className="ml-2">
                       Discount: {((1 - discountRate) * 100).toFixed()}%
                     </span>
